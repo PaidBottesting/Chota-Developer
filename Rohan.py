@@ -169,7 +169,7 @@ async def has_access(user_id, chat_member=None):
 async def run_attack(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./Moin  {ip} {port} {duration}",
+            f"./bgmi  {ip} {port} {duration}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
